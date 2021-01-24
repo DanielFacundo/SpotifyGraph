@@ -8,3 +8,6 @@ app.use(cors());
 app.listen(port, (err) => {
     console.log('server is listening on port 8080');
 })
+
+var songroutes = require('./routes/songs')
+songroutes(app);
